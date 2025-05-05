@@ -35,7 +35,7 @@ function loadStatus() {
       var statusActivity = document.getElementById("status-activity");
       var statusText = document.getElementById("status-text");
       statusActivity.style.display = "none";
-      statusText.innerText = "Currently thoughtless...";
+      statusText.innerText = "";
       if (activities.length > 0) {
         for (i in activities) {
           // Current activity
@@ -56,4 +56,4 @@ function loadStatus() {
     });
 }
 loadStatus();
-setInterval(loadStatus, 60000);
+setInterval(loadStatus, 1000);
