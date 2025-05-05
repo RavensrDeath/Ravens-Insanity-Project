@@ -264,7 +264,7 @@ h2 {
 .status {
 	border-radius: 5px;
 	min-width: 30%;
-	width: 30%;
+	width: 100%;
 	border: 2px solid rgba(255, 255, 255, 0.1);
 	box-shadow: 0 0 50px 5px rgba(255, 255, 255, 0.1);
 	padding: 5px 10px 5px 10px;
@@ -306,14 +306,16 @@ h2 {
 }
 .pfp-container {
 	position: relative;
-	width: 45%;
+	min-width: 25%;
+	width: 25%;
 	border-radius: 15px;
 	margin: 5px;
+	display: inline-block;
 }
 .status-container {
 	line-height: 1px;
-	width: 100%;
-	height: 40%;
+	min-width: 35%;
+	height: 100%;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -322,10 +324,18 @@ h2 {
 	font-size: 1px;
 	margin: 10px;
 }
+.status-color {
+	position: absolute;
+	width: 10px;
+	background-color: rgba(0, 255, 0, 1);
+	border-radius: 100%;
+	height: 10px;
+}
 #status-bool {
 	font-size: 20px;
 	font-weight: bolder;
 	font-family: HK Grotesk;
+	text-shadow: 0 0 5px rgb(250, 150, 212);
 }
 
 @keyframes scanlines {
